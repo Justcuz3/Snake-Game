@@ -30,18 +30,6 @@ body {
   box-shadow: 0 0 6px rgba(0, 0, 255, 0.5); /* Water reflection effect */
 }
 
-.snake::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.2); /* Light reflection */
-  border-radius: 0.5vmin;
-  box-shadow: inset 0 0 10px rgba(0, 0, 255, 0.5); /* Inner glow effect */
-}
-
 .food {
   position: relative;
   width: 100%;
@@ -50,7 +38,7 @@ body {
 
 .food::before {
   content: "🔥"; /* Fire emoji */
-  font-size: 3vmin; /* Larger size for emphasis */
+  font-size: vmin; /* Larger size for emphasis */
   color: #ffeb3b; /* Bright yellow to simulate flame */
   position: absolute;
   top: 50%;
